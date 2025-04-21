@@ -1,6 +1,8 @@
 body {
   margin: 0; /* 移除 body 的默认外边距 */
   padding: 0; /* 移除 body 的默认内边距 */
+  background-color: rgba(174, 52, 180, 0.233);
+  
 }
 /*中间的freecamp*/
 h1 {
@@ -13,11 +15,13 @@ header {
   width: 100%;
 }
 /*确保超链接不会变色*/
-a{
+a {
   color: white;
   text-decoration: none; /* 取消下划线 */
 }
-a:hover, a:active,a:visited {
+a:hover,
+a:active,
+a:visited {
   color: white; /* 点击后保持与默认颜色一致 */
   text-decoration: none; /* 确保点击后依旧没有下划线 */
 }
@@ -28,7 +32,7 @@ a:hover, a:active,a:visited {
   background-color: #6a6969; /* 设置背景颜色 */
   color: antiquewhite;
   text-align: left; /* 文字居中 */
-  padding-top:5px; /* 设置顶部内边距 */
+  padding-top: 5px; /* 设置顶部内边距 */
   padding-left: 15px; /* 设置左侧内边距 */
   position: absolute; /*绝对定位*/
   top: 28px;
@@ -48,7 +52,7 @@ a:hover, a:active,a:visited {
 
 .fa-solid.fa-earth-americas {
   color: rgb(249, 252, 249);
-  width:30px;
+  width: 30px;
   height: 30px;
   font-size: 20px;
   text-align: center;
@@ -72,4 +76,24 @@ a:hover, a:active,a:visited {
   line-height: 25px;
   border: 2px solid #000;
   text-align: center;
+}
+
+/*中间的文字*/
+#text1{
+  font-size: 50px;
+  font-weight: 600;
+  position: absolute;
+  top: 6%;
+  left: 30%;
+}
+
+#text2{
+  font-weight: 600;
+  position: absolute;
+  top:35%;
+  left:30%;
+}
+
+.highlight{
+  font-size: 20px;
 }
