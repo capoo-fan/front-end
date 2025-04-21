@@ -12,18 +12,26 @@ header {
   margin-top: 0px;
   width: 100%;
 }
-
+/*确保超链接不会变色*/
+a{
+  color: white;
+  text-decoration: none; /* 取消下划线 */
+}
+a:hover, a:active,a:visited {
+  color: white; /* 点击后保持与默认颜色一致 */
+  text-decoration: none; /* 确保点击后依旧没有下划线 */
+}
 /*搜索框*/
 #box {
-  width: 400px; /* 设置方框的宽度 */
+  width: 28%; /* 设置方框的宽度 */
   height: 20px; /* 设置方框的高度 */
   background-color: #6a6969; /* 设置背景颜色 */
   color: antiquewhite;
   text-align: left; /* 文字居中 */
-  padding-top: 5px; /* 设置顶部内边距 */
+  padding-top:5px; /* 设置顶部内边距 */
   padding-left: 15px; /* 设置左侧内边距 */
   position: absolute; /*绝对定位*/
-  top: 30px;
+  top: 28px;
   left: 20px;
 }
 
@@ -33,7 +41,7 @@ header {
   justify-content: flex-end; /* 将子元素靠右对齐 */
   align-items: center; /* 垂直居中对齐 */
   position: absolute; /* 绝对定位到右上角 */
-  top: 10px; /* 距离顶部 10px */
+  top: 9px; /* 距离顶部 10px */
   right: 1%; /* 距离右侧 10px */
   gap: 15px; /* 设置子元素之间的间距 */
 }
@@ -59,7 +67,7 @@ header {
 }
 #sign {
   background-color: #ffe208;
-  width: 70px;
+  width: 80px;
   height: 25px;
   line-height: 25px;
   border: 2px solid #000;
