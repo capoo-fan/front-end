@@ -2,7 +2,6 @@ body {
   margin: 0; /* 移除 body 的默认外边距 */
   padding: 0; /* 移除 body 的默认内边距 */
   background-color: rgba(174, 52, 180, 0.233);
-  
 }
 /*中间的freecamp*/
 h1 {
@@ -40,7 +39,7 @@ a:visited {
 }
 
 /*右侧的三个图标*/
-#icons {
+#headright {
   display: flex; /* 启用 Flexbox 布局 */
   justify-content: flex-end; /* 将子元素靠右对齐 */
   align-items: center; /* 垂直居中对齐 */
@@ -63,6 +62,8 @@ a:visited {
 #menu {
   border: 1px solid #f4f2f2;
   font-size: 20px;
+  letter-spacing: -0.5px;
+  word-spacing: -7px;
   width: 70px;
   height: 25px;
   line-height: 25px;
@@ -71,6 +72,8 @@ a:visited {
 }
 #sign {
   background-color: #ffe208;
+  letter-spacing: -0.5px;
+  word-spacing: -7px;
   width: 80px;
   height: 25px;
   line-height: 25px;
@@ -79,21 +82,80 @@ a:visited {
 }
 
 /*中间的文字*/
-#text1{
-  font-size: 50px;
-  font-weight: 600;
+#text {
   position: absolute;
-  top: 6%;
+  left: 30%;
+  top: 15%;
+  letter-spacing: -0.5px;
+  word-spacing: -7px;
+}
+
+#text1 {
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  word-spacing: -7px;
+}
+#text2 {
+  font-size: 20px;
+}
+.highlight {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*中间的图标*/
+
+#icons {
+  display: flex; /* 启用 Flexbox 布局 */
+  justify-content: center; /* 水平居中排列 */
+  align-items: center; /* 垂直居中对齐 */
+  gap: 25px; /* 设置图标之间的间距 */
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  font-size: 30px;
+}
+#icons div {
+  font-weight: bold;
+}
+#icons span {
+  font-weight: lighter;
+}
+
+/*中间的黄色方框*/
+#yellowbox {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  word-spacing: -7px;
+  line-height: 70px; /* 设置与高度相同的行高，文字垂直居中 */
+  text-align: center; /* 水平居中 */
+
+  background-color: rgb(254, 204, 76);
+
+  width: 20%;
+  height: 70px;
+  position: absolute;
+  top: 55%;
+  left: 43%;
+
+  border-color: rgb(254, 172, 50);
+  border-style: solid;
+  border-radius: 10px; /* 设置圆角 */
+}
+
+#figure {
+  position: absolute;
+  top: 70%;
   left: 30%;
 }
-
-#text2{
-  font-weight: 600;
-  position: absolute;
-  top:35%;
-  left:30%;
-}
-
-.highlight{
+#figure figcaption {
+  font-weight: bold;
   font-size: 20px;
+  text-align: center;
+}
+#img {
+  width: 100%;
+  height: 100%;
 }
