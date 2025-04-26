@@ -1,4 +1,4 @@
-import * as math from "mathjs";
+/*import * as math from "mathjs";*/
 
 let display = document.getElementById("display");
 let expression = " ";
