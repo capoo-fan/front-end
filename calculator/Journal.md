@@ -47,3 +47,21 @@ input是建立一个输入框，value是决定初始存在的值
 
 flex容器适合排布一维布局，grid很适合排布二维布局，然后grid-column/row可以为元素横跨行列
 
+ 
+## 网页项目的布局建议
+
+calculator/
+├── src/                    # 源代码目录
+│   ├── js/                 # JavaScript 文件
+│   │   ├── main.js         # 主要脚本文件
+│   │   └── utils/          # 工具函数
+│   ├── styles/             # 样式文件
+│   │   └── main.css        # 主要样式表
+│   └── index.html          # 主HTML文件
+├── public/                 # 静态资源
+│   └── favicon.ico         # 网站图标等
+├── dist/                   # 构建输出目录
+├── node_modules/           # 依赖
+├── package.json            # 项目配置
+├── vite.config.js          # Vite配置
+└── README.md               # 项目说明

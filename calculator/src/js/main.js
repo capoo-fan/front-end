@@ -1,10 +1,7 @@
-/*import * as math from "mathjs";*/
-
-let display = document.getElementById("display");
-let expression = " ";
-let operator = ["+", "-", "*", "/"];
-
+import * as math from "mathjs";
+let expression = "";
 document.addEventListener("DOMContentLoaded", () => {
+  const display = document.getElementById("display");
   const buttons = document.querySelectorAll(".btn");
   buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
