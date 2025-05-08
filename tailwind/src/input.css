@@ -5,3 +5,13 @@
     @apply text-6xl font-bold ;
   }
 }
+
+@layer components {
+  .calc-btn {
+    @apply py-4 text-lg font-medium rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors
+  }
+  .operation-btn {
+    @apply py-4 text-lg font-medium rounded-lg bg-orange-400 hover:bg-orange-500 text-white transition-colors
+  }
+}
+
