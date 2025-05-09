@@ -9,3 +9,10 @@ npm install tailwindcss @tailwindcss/cli
 
 npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 ```
+
+
+## head技术细节
+
+* max-w-sm 设置计算器的最大宽度
+* shadow-xl 加入阴影
+* row-span-3 设置行跨度
