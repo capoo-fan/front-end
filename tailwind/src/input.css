@@ -18,7 +18,7 @@
 /*显示屏*/
 @layer components {
   .showcase {
-    @apply w-full text-right py-8 px-3 text-2xl font-semibold bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+    @apply w-full text-right py-8 px-3 text-2xl font-semibold bg-green-200 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
   }
   .calc-btn {
     @apply py-2 text-lg font-medium rounded-lg text-gray-900 bg-gray-200 hover:bg-gray-300  transition-colors;
@@ -29,7 +29,24 @@
 }
 
 /*第二层*/
-
+@layer components {
+  .equal-grid-6 {
+    @apply grid grid-cols-6 gap-1;
+  }
+  /*圆形按键*/
+  .round {
+    @apply w-6 h-6 rounded-full flex items-center justify-center text-lg font-medium 
+    oklch(70.4% 0.04 256.788) hover:bg-gray-300 text-gray-900 transition-colors;
+  }
+  .small-black {
+    @apply w-4 h-4 rounded-full flex items-center justify-center text-lg font-medium bg-black text-white;
+  }
+}
 /*第三层*/
+@layer components {
+  .dark-btn {
+    @apply w-full mx-4 my-5 p-4  rounded-md bg-gray-400 text-white shadow-md;
+  }
+}
 
 /*第四层*/
